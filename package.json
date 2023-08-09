@@ -1,0 +1,33 @@
+{
+    "name": "create-studentblock",
+    "description": "Quickly create a new student block",
+    "version": "1.0.1",
+    "main": "./lib/create-studentblock.js",
+    "bin": {
+        "create-studentblock": "bin/index.js"
+    },
+    "keywords": [
+        "Strength 9"
+    ],
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "files": [
+        "/lib",
+        "/bin",
+        "README.md"
+    ],
+    "engines": {
+        "node": ">=15.0.0"
+    },
+    "author": "Dave Pratt <Strength9@users.noreply.github.com>",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Strength9/create-tutorblock.git"
+    },
+    "dependencies": {
+        "prompts": "^2.4.2"
+    },
+    "devDependencies": {}
+}

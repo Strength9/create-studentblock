@@ -1,0 +1,22 @@
+<?php
+/*
+ * XYZ Block
+*/
+
+// Block Name (sluggified).
+$block_name = 'QWY';
+$background = ( empty( $block['backgroundColor'] ) ) ? '' : 'has-' . $block['backgroundColor'] . '-background-color';
+$has_background = $background ? 'has-background' : '';
+$font_size = ( empty( $block['fontSize'] ) ) ? '' : 'has-' . $block['fontSize'] . '-font-size';
+$align = ( empty( $block['align'] ) ) ? '' : 'align' . $block['align'];
+$align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
+$anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
+$additional_classes = $block['className'] ?? '';
+$all_classes = array( $block_name, $background, $has_background, $font_size, $align, $align_text, $additional_classes,);
+$classes = implode( ' ', $all_classes );
+?>
+
+<div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $classes ); ?>">
+	<h2 >Student block Created.</h2>
+	<p>Open the blocks PHP file to edit this text.</p>
+</div>
